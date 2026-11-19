@@ -1,0 +1,68 @@
+{
+  "ztds_version": "1.1.2",
+  "spec_reference": "IETF draft-sibiryakov-ztds-protocol-02 (RFC v1.0)",
+  "iterations_per_class": 500,
+  "total_iterations": 2000,
+  "results": [
+    {
+      "payload_class": "devsecops_secrets",
+      "unique_templates": 10,
+      "iterations": 500,
+      "avg_payload_bytes": 3528.5,
+      "mean_tokens_per_doc": 4.0,
+      "sanitize_reveal_p50_ms": 0.1109,
+      "sanitize_reveal_mean_ms": 0.76,
+      "sanitize_reveal_p95_ms": 4.4501,
+      "sanitize_reveal_p99_ms": 4.6077,
+      "full_cycle_with_gc_zeroize_p50_ms": 0.6392,
+      "throughput_mb_s": 4.43,
+      "round_trip_exact_match_pct": 100.0,
+      "peak_tracemalloc_kb": 98.6
+    },
+    {
+      "payload_class": "healthcare_phi",
+      "unique_templates": 10,
+      "iterations": 500,
+      "avg_payload_bytes": 3334.3,
+      "mean_tokens_per_doc": 4.0,
+      "sanitize_reveal_p50_ms": 0.1399,
+      "sanitize_reveal_mean_ms": 1.2483,
+      "sanitize_reveal_p95_ms": 7.4701,
+      "sanitize_reveal_p99_ms": 7.5479,
+      "full_cycle_with_gc_zeroize_p50_ms": 0.6655,
+      "throughput_mb_s": 2.55,
+      "round_trip_exact_match_pct": 100.0,
+      "peak_tracemalloc_kb": 115.45
+    },
+    {
+      "payload_class": "finance_iban_cards",
+      "unique_templates": 10,
+      "iterations": 500,
+      "avg_payload_bytes": 2978.5,
+      "mean_tokens_per_doc": 5.0,
+      "sanitize_reveal_p50_ms": 0.1291,
+      "sanitize_reveal_mean_ms": 1.1275,
+      "sanitize_reveal_p95_ms": 6.7256,
+      "sanitize_reveal_p99_ms": 6.8272,
+      "full_cycle_with_gc_zeroize_p50_ms": 0.6574,
+      "throughput_mb_s": 2.52,
+      "round_trip_exact_match_pct": 100.0,
+      "peak_tracemalloc_kb": 111.17
+    },
+    {
+      "payload_class": "corporate_legal_pii",
+      "unique_templates": 10,
+      "iterations": 500,
+      "avg_payload_bytes": 3588.5,
+      "mean_tokens_per_doc": 5.0,
+      "sanitize_reveal_p50_ms": 0.1514,
+      "sanitize_reveal_mean_ms": 1.3449,
+      "sanitize_reveal_p95_ms": 8.0026,
+      "sanitize_reveal_p99_ms": 8.2146,
+      "full_cycle_with_gc_zeroize_p50_ms": 0.6929,
+      "throughput_mb_s": 2.54,
+      "round_trip_exact_match_pct": 100.0,
+      "peak_tracemalloc_kb": 122.37
+    }
+  ]
+}
