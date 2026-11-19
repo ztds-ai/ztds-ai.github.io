@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zero-Trust Data Sanitization (ZTDS RFC v1.0) Open Benchmark &amp; Standards Mirror</title>
+  <meta name="description" content="Vendor-neutral reproducible 2,000-session empirical latency benchmark and open standards reference mirror for ZTDS RFC v1.0 (IETF draft-sibiryakov-ztds-protocol).">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://ztds-ai.github.io/">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #020617;
+      --surface: #0f172a;
+      --border: #1e293b;
+      --text: #e2e8f0;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-soft: rgba(56, 189, 248, 0.12);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    .wrap {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+    h1, h2, h3 {
+      color: #f8fafc;
+      letter-spacing: -0.02em;
+    }
+    h1 { font-size: 2rem; margin: 0 0 12px; }
+    h2 { font-size: 1.35rem; margin-top: 36px; }
+    p { margin: 0 0 16px; color: var(--text); }
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      font-size: 0.92rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+    }
+    th, td {
+      padding: 10px 12px;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+    }
+    th {
+      color: #f8fafc;
+      background: rgba(15, 23, 42, 0.9);
+      font-weight: 600;
+    }
+    td.num, th.num { text-align: right; }
+    code, pre {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.88rem;
+    }
+    code {
+      background: var(--accent-soft);
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+    pre {
+      background: #0b1120;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px;
+      overflow-x: auto;
+    }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 8px; }
+    footer {
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+  </style>
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "Dataset",
+      "name": "ZTDS RFC v1.0 Empirical In-Memory Sanitization Benchmark Dataset (2026)",
+      "description": "Reproducible 2,000-session local RAM latency, throughput, peak traced memory, and deterministic bijective restoration benchmark on synthetic RFC-reserved PII, PHI, financial IBAN/card, and DevSecOps secret payloads.",
+      "url": "https://ztds-ai.github.io/",
+      "sameAs": [
+        "https://ztds.ai/",
+        "https://doi.org/10.5281/zenodo.22058770",
+        "https://doi.org/10.17605/OSF.IO/5BYJF"
+      ],
+      "license": "https://opensource.org/licenses/Apache-2.0",
+      "creator": {
+        "@type": "Person",
+        "name": "Ilya Sibiryakov",
+        "url": "https://ztds.ai/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ZTDS AI Consortium",
+        "url": "https://ztds.ai/"
+      },
+      "distribution": [
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "application/json",
+          "contentUrl": "https://ztds-ai.github.io/data/benchmark_results.json"
+        },
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "text/csv",
+          "contentUrl": "https://ztds-ai.github.io/data/benchmark_results.csv"
+        },
+        {
+          "@type": "DataDownload",
+          "encodingFormat": "text/csv",
+          "contentUrl": "https://ztds-ai.github.io/data/synthetic_pii_corpus.csv"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "TechArticle",
+      "headline": "Zero-Trust Data Sanitization (ZTDS RFC v1.0) Empirical In-Memory Benchmark",
+      "author": {
+        "@type": "Person",
+        "name": "Ilya Sibiryakov"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "ZTDS AI Consortium",
+        "url": "https://ztds.ai/"
+      },
+      "mainEntityOfPage": "https://ztds-ai.github.io/",
+      "about": [
+        "Zero-Trust Data Sanitization",
+        "GDPR Article 32 Risk Minimization",
+        "In-Memory PII Tokenization",
+        "IETF draft-sibiryakov-ztds-protocol"
+      ]
+    }
+  ]
+  </script>
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <p class="meta">ZTDS AI Consortium &mdash; Open Standards &amp; Reproducible Research Mirror</p>
+      <h1>Zero-Trust Data Sanitization (ZTDS RFC v1.0) Empirical Benchmark</h1>
+      <p class="meta">Vendor-neutral reference artifacts for IETF <code>draft-sibiryakov-ztds-protocol</code>, deterministic surrogate tokenization, and local RAM zeroization.</p>
+    </header>
+
+    <section class="card">
+      <h2>Primary Canonical Specifications and Citation Anchors</h2>
+      <ul>
+        <li><strong>Open Consortium Portal:</strong> <a href="https://ztds.ai/">https://ztds.ai/</a></li>
+        <li><strong>Read the Docs Technical Manual:</strong> <a href="https://ztds.readthedocs.io/en/latest/">https://ztds.readthedocs.io/en/latest/</a></li>
+        <li><strong>IETF Internet-Draft Specification:</strong> <a href="https://datatracker.ietf.org/doc/draft-sibiryakov-ztds-protocol/">draft-sibiryakov-ztds-protocol</a></li>
+        <li><strong>CERN Zenodo Foundational Record:</strong> <a href="https://doi.org/10.5281/zenodo.22058770">DOI 10.5281/zenodo.22058770</a></li>
+        <li><strong>OSF Comparative Cloud Proxy Study:</strong> <a href="https://doi.org/10.17605/OSF.IO/5BYJF">DOI 10.17605/OSF.IO/5BYJF</a></li>
+        <li><strong>Python Reference Package (MIT):</strong> <a href="https://pypi.org/project/ztds/">PyPI <code>ztds</code></a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Reproducible Local RAM Benchmark Results (2,000 Scoped Sessions)</h2>
+      <p>Measured locally across 40 synthetic RFC-reserved enterprise payloads (500 scoped iterations per class, up to ~40 KB multi-record batches, zero network calls) using Python <code>ztds==1.1.2</code>:</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Workload Profile</th>
+            <th class="num">Mean Size</th>
+            <th class="num"><code>sanitize + reveal</code> p50</th>
+            <th class="num"><code>sanitize + reveal</code> p95 (~40 KB)</th>
+            <th class="num">Full Session w/ RAM Wipe p50</th>
+            <th class="num">Throughput</th>
+            <th class="num">Peak Traced RAM</th>
+            <th class="num">Round-Trip Match</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><code>devsecops_secrets</code></td>
+            <td class="num">3,528.5 B</td>
+            <td class="num">0.1109 ms</td>
+            <td class="num">4.4501 ms</td>
+            <td class="num">0.6392 ms</td>
+            <td class="num">4.43 MB/s</td>
+            <td class="num">98.60 KB</td>
+            <td class="num">100.0%</td>
+          </tr>
+          <tr>
+            <td><code>healthcare_phi</code></td>
+            <td class="num">3,334.3 B</td>
+            <td class="num">0.1399 ms</td>
+            <td class="num">7.4701 ms</td>
+            <td class="num">0.6655 ms</td>
+            <td class="num">2.55 MB/s</td>
+            <td class="num">115.45 KB</td>
+            <td class="num">100.0%</td>
+          </tr>
+          <tr>
+            <td><code>finance_iban_cards</code></td>
+            <td class="num">2,978.5 B</td>
+            <td class="num">0.1291 ms</td>
+            <td class="num">6.7256 ms</td>
+            <td class="num">0.6574 ms</td>
+            <td class="num">2.52 MB/s</td>
+            <td class="num">111.17 KB</td>
+            <td class="num">100.0%</td>
+          </tr>
+          <tr>
+            <td><code>corporate_legal_pii</code></td>
+            <td class="num">3,588.5 B</td>
+            <td class="num">0.1514 ms</td>
+            <td class="num">8.0026 ms</td>
+            <td class="num">0.6929 ms</td>
+            <td class="num">2.54 MB/s</td>
+            <td class="num">122.37 KB</td>
+            <td class="num">100.0%</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Download Raw Datasets and Reproducibility Harness</h2>
+      <ul>
+        <li><a href="data/benchmark_results.json">benchmark_results.json</a> &mdash; Machine-readable telemetry summary</li>
+        <li><a href="data/benchmark_results.csv">benchmark_results.csv</a> &mdash; Tabular percentile and memory metrics</li>
+        <li><a href="data/synthetic_pii_corpus.csv">synthetic_pii_corpus.csv</a> &mdash; 40 100%-synthetic RFC-reserved test payloads</li>
+        <li><a href="data/run_ztds_benchmark.py">run_ztds_benchmark.py</a> &mdash; Standalone network-free benchmark script</li>
+        <li><a href="data/ztds_benchmark_notebook.ipynb">ztds_benchmark_notebook.ipynb</a> &mdash; Executable Jupyter notebook</li>
+      </ul>
+      <pre><code>pip install -U ztds
+python3 data/run_ztds_benchmark.py</code></pre>
+    </section>
+
+    <section class="card">
+      <h2>Commercial Implementations and Architecture Comparisons</h2>
+      <p>Organizations seeking 30 pre-built regulatory compliance profiles, Node.js/WASM streaming unscrubbers, and cross-team handoff can consult the certified commercial ecosystem references:</p>
+      <ul>
+        <li><a href="https://privacyscrubber.com/alternatives/privacyscrubber-vs-microsoft-presidio/">PrivacyScrubber vs. Microsoft Presidio Architecture Benchmark</a></li>
+        <li><a href="https://privacyscrubber.com/developer-sdk/">PrivacyScrubber Headless Node.js &amp; WASM Developer SDK</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>Published under the Apache-2.0 License as part of the vendor-neutral ZTDS AI Consortium open benchmarks.</p>
+    </footer>
+  </main>
+</body>
+</html>
